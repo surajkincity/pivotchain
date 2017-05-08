@@ -646,6 +646,7 @@ section.row, header.row, footer.row {
 .stricky-fixed .navbar.navbar-default .navbar-collapse .menu li a {
   color: #555555 !important;
 }
+.stricky-fixed .navbar.navbar-default .navbar-collapse  .logotext{ color: #555555 !important;}
 .stricky-fixed .navbar.navbar-default .navbar-collapse .menu li a:hover {
   border-color: #1aabec;
   color: #1aabec;
@@ -686,6 +687,10 @@ section.row, header.row, footer.row {
 .stricky-fixed .navbar.navbar-default.pr-menu .menu li a {
   color: #555555 !important;
 }
+.stricky-fixed .navbar.navbar-default.pr-menu .logotext{
+  color: #555555 !important;
+}
+
 .stricky-fixed .navbar.navbar-default.pr-menu .menu li a:hover {
   border-color: #1574d4;
   color: #1574d4;
