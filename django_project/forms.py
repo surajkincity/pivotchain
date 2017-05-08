@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import newsletter,leads,contact
+from .models import newsletter,career,contact
 
 
 class contactform(forms.ModelForm):
