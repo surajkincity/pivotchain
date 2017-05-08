@@ -37,6 +37,32 @@ def home(request):
     form1 = leadsform()
     return render(request, 'home.html', {'form': form, 'display' :display , 'message' :message, 'form1' :form1 })
  
+def resume(request):  
+  if request.method == "POST":
+    message = 'Thanks! We will get back to you shortly.'
+    displaya = 'none'
+    display = 'none'    
+    if "contact" in request.POST:
+      form = contactform(request.POST)
+      if form.is_valid():
+       post = form.save(commit=False)
+       post.save()           
+    if "resume" in request.POST:
+      form = leadsform(request.POST)
+      if form.is_valid():
+        post = form.save(commit=False)
+        post.save()
+      else:
+        return render(request, 'about.html', )
+    return render(request, 'resume.html', { 'display' :display , 'displaya' :displaya , 'message' :message  })    
+  else:
+    message = ''
+    display = 'block'
+    form1 = contactform()
+    form = leadsform()
+    return render(request, 'resume.html', {'form': form, 'display' :display , 'message' :message, 'form1' :form1 })
+
+
 
 
 def contacted(request):
