@@ -43,10 +43,10 @@ def resume(request):
     displaya = 'none'
     display = 'none'    
     form = leadsform(request.POST)
-      if form.is_valid():
+    if form.is_valid():
         post = form.save(commit=False)
         post.save()
-      else:
+    else:
         return render(request, 'about.html', )
     return render(request, 'resume.html', { 'display' :display , 'displaya' :displaya , 'message' :message  })    
   else:
