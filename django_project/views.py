@@ -42,13 +42,7 @@ def resume(request):
     message = 'Thanks! We will get back to you shortly.'
     displaya = 'none'
     display = 'none'    
-    if "contact" in request.POST:
-      form = contactform(request.POST)
-      if form.is_valid():
-       post = form.save(commit=False)
-       post.save()           
-    if "resume" in request.POST:
-      form = leadsform(request.POST)
+    form = leadsform(request.POST)
       if form.is_valid():
         post = form.save(commit=False)
         post.save()
@@ -58,7 +52,6 @@ def resume(request):
   else:
     message = ''
     display = 'block'
-    form1 = contactform()
     form = leadsform()
     return render(request, 'resume.html', {'form': form, 'display' :display , 'message' :message, 'form1' :form1 })
 
