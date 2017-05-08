@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block title %}{{post.title}} | PivotChain{% endblock %}
-{% block menu %}
 
+{% block content %}
 <style type="text/css">
 .col-sm-6 {}
   .logotext {    color: #f0f0f0 !important;}
@@ -22,14 +22,43 @@
 <script type="text/javascript">
   var answers = 0;
 </script>
-                            <li class=""><a href="{% url 'home' %}">Home</a></li>
-                            <li class=""><a href="{% url 'about' %}">About</a></li>
-                            <li class=""><a href="{% url 'services' %}">Services</a></li>                    
-                            <li class="current"><a href="{% url 'answers:blogindex' %}">Blog</a></li>
-                            <li class=""><a href="{% url 'career' %}">Career</a></li>
-{% endblock %}
-{% block content %}
+<header class="header header2 slideIn animated" id="stricky">
+                        <nav class="navbar navbar-default pr-menu pr2-menu">
+                <div class="container">
+                    <!--========== Brand and toggle get grouped for better mobile display ==========-->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png' %}" style="width: 40px;display: inline-block;" alt=""><span class="logotext" style="color:#5a5a5a;" >PIVOTCHAIN</span></a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!--========== Collect the nav links, forms, and other content for toggling ==========-->
+                    <ul class="nav navbar-nav nav-right navbar-right">
+                        
+                        <li>
+                           <a href="#contactlink" class="btn g-btn" style="">
+                                Let's talk
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-right navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav menu" id="nav">
+                            <li class="current"><a href="#home">Home</a></li>
+                            <li class=""><a href="#aboutlink">About</a></li>
+                            <li class=""><a href="#servicelink">Services</a></li>                    
+                            <li class=""><a href="#bloglink">Blog</a></li>
+                            <li class=""><a href="#careerlink">Career</a></li>
 
+
+
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        </header>
 <section class="kickstarter-hero" id="home" style="background:url('{% static 'img/teambg.jpg' %}');background-color: rgba(0, 0, 0, .7) !important;
 
     background-attachment: fixed;
