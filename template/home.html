@@ -687,7 +687,7 @@ At Pivotchain, we're building a world-class Analytics solutions helping our cust
 <div class="col-md-4 ">
 
 
-<form method="POST" style="display:{{display}};margin-left: 10%;">
+<form action='.' method="POST" style="display:{{display}};margin-left: 10%;">
   {% csrf_token %}
 
       {{ form1.as_p }}
@@ -783,7 +783,7 @@ At Pivotchain, we're building a world-class Analytics solutions helping our cust
  
               
                 </form>-->
-               {{ message }} <form method="POST" style="display:{{display}};margin-left: 10%;">
+               {{ message }} <form action='.' method="POST" style="display:{{display}};margin-left: 10%;">
   {% csrf_token %}
 
       {{ form.as_p }}
