@@ -26,12 +26,12 @@ def home(request):
        display = 'none'
        return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })
     if "resume" in request.POST:
-      if form.is_valid():
+      if form1.is_valid():
        post = form1.save(commit=False)
        post.save()
        message = 'Thanks! We will get back to you shortly.'
        form1 = ' '
-       display = 'none'
+       displaya = 'none'
        return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })    
   else:
     message = ''
