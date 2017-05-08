@@ -24,7 +24,7 @@ def home(request):
       form = ' '
       display = 'none'
 
-      return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message , 'blogs' : blogs })
+      return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })
     
   else:
     message = ''
