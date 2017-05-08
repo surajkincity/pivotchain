@@ -23,7 +23,7 @@ def home(request):
        post = form.save(commit=False)
        post.save()           
     if "resume" in request.POST:
-      form = leadsform(request.POST)
+      form = leadsform(request.POST, request.FILES)
       if form.is_valid():
         post = form.save(commit=False)
         post.save()
