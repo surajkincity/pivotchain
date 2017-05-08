@@ -43,7 +43,7 @@ def resume(request):
     displaya = 'none'
     display = 'none'    
     form = leadsform(request.POST,request.FILES)
-    form.save()
+    
     if form.is_valid():
         post = form.save(commit=False)
         post.save()
