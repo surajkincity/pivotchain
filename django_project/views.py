@@ -28,9 +28,10 @@ def home(request):
        post.save()           
     if "resume" in request.POST:
       form = leadsform(request.POST)
-      post = form.save(commit=False)
-      post.save()
-      
+      if form.is_valid():
+        post = form.save(commit=False)
+        post.save()
+  
 
     return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'displaya' :displaya , 'message' :message  })    
   else:
