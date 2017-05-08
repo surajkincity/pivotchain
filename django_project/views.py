@@ -12,13 +12,9 @@ import answers.models
 
 
 
-def home(request):
-  
+def home(request):  
   if request.method == "POST":
-    
-    form1 = leadsform(request.POST)
     message = 'Thanks! We will get back to you shortly.'
-    form1 = ' '
     displaya = 'none'
     display = 'none'    
     if "contact" in request.POST:
