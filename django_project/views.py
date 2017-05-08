@@ -17,48 +17,43 @@ def home(request):
   if request.method == "POST":
     form = contactform(request.POST)
     form1 = leadsform(request.POST)
-    if "contact" in request.POST:
-      if form.is_valid():
+    if form.is_valid():
        post = form.save(commit=False)
        post.save()
        message = 'Thanks! We will get back to you shortly.'
        form = ' '
        display = 'none'
        return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })
-    if "resume" in request.POST:
-      if form1.is_valid():
+      
+    
+  else:
+    message = ''
+    display = 'block'
+    form = contactform()
+    form1 = leadsform()
+    return render(request, 'home.html', {'form': form, 'display' :display , 'message' :message, 'form1' :form1 })
+
+
+
+def resume(request):  
+  if request.method == "POST":
+    form = contactform(request.POST)
+    form1 = leadsform(request.POST)
+    if form1.is_valid():
        post = form1.save(commit=False)
        post.save()
        message = 'Thanks! We will get back to you shortly.'
        form1 = ' '
-       displaya = 'none'
-       return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })    
+       display = 'none'
+       return render(request, 'resume.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })   
   else:
     message = ''
     display = 'block'
     form = contactform()
     form1 = leadsform()
-    return render(request, 'home.html', {'form': form, 'display' :display , 'message' :message, 'form1' :form1 })
+    return render(request, 'resume.html', {'form': form, 'display' :display , 'message' :message, 'form1' :form1 })
 
-def resume(request):
-  
-  if request.method == "POST":
-    form = contactform(request.POST)
-    form1 = leadsform(request.POST)
-    if form.is_valid():
-      post = form.save(commit=False)
-      post.save()
-      message = 'Thanks! We will get back to you shortly.'
-      form = ' '
-      display = 'none'
-
-      return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })    
-  else:
-    message = ''
-    display = 'block'
-    form = contactform()
-    form1 = leadsform()
-    return render(request, 'home.html', {'form': form, 'display' :display , 'message' :message, 'form1' :form1 })
+ 
 
 def contacted(request):
     comments = contact.objects.all()
