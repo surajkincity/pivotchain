@@ -29,9 +29,7 @@ def home(request):
         post.save()
       else:
         return render(request, 'about.html', )
-  
-
-    return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'displaya' :displaya , 'message' :message  })    
+    return render(request, 'home.html', { 'display' :display , 'displaya' :displaya , 'message' :message  })    
   else:
     message = ''
     display = 'block'
