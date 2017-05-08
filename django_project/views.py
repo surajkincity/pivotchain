@@ -42,7 +42,7 @@ def resume(request):
     message = 'Thanks! We will get back to you shortly.'
     displaya = 'none'
     display = 'none'    
-    form = leadsform(request.POST)
+    form = leadsform(request.POST,request.FILES)
     if form.is_valid():
         post = form.save(commit=False)
         post.save()
