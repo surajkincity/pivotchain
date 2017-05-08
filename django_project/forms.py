@@ -23,12 +23,7 @@ class contactform(forms.ModelForm):
 class leadsform(forms.ModelForm):
     class Meta:
         model = career
-        widgets = {
-            'name': forms.TextInput(attrs={'placeholder': 'Name'}),
-            'email': forms.TextInput(attrs={'placeholder': 'Email'}),
-      
-
-        }
+       
         
         fields = ('name','email','resume')
 
