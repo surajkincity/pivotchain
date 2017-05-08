@@ -525,7 +525,7 @@ section.row, header.row, footer.row {
   border: 0px;
 }
 .navbar.navbar-default.pr-menu.pr2-menu .menu li a {
-  color: #555555;
+  color: #555555 ;
 }
 .navbar.navbar-default.pr-menu.pr2-menu .menu li a:hover {
   border-color: #1574d4;
@@ -644,7 +644,7 @@ section.row, header.row, footer.row {
   background: #1aabec;
 }
 .stricky-fixed .navbar.navbar-default .navbar-collapse .menu li a {
-  color: #555555;
+  color: #555555 !important;
 }
 .stricky-fixed .navbar.navbar-default .navbar-collapse .menu li a:hover {
   border-color: #1aabec;
@@ -684,7 +684,7 @@ section.row, header.row, footer.row {
   color: #1574d4;
 }
 .stricky-fixed .navbar.navbar-default.pr-menu .menu li a {
-  color: #555555;
+  color: #555555 !important;
 }
 .stricky-fixed .navbar.navbar-default.pr-menu .menu li a:hover {
   border-color: #1574d4;
