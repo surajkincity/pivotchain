@@ -51,7 +51,7 @@ def resume(request):
     display = 'block'
     form = contactform()
     form1 = leadsform()
-    return render(request, 'resume.html', {'form': form, 'display' :display , 'message' :message, 'form1' :form1 })
+    return HttpResponseRedirect(self.get_success_url())
 
  
 
