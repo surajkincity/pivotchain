@@ -17,21 +17,19 @@ def home(request):
   if request.method == "POST":
     form = contactform(request.POST)
     form1 = leadsform(request.POST)
+    message = 'Thanks! We will get back to you shortly.'
+    form1 = ' '
+    displaya = 'none'
+    display = 'none'    
     if "contact" in request.POST:
       if form.is_valid():
        post = form.save(commit=False)
-       post.save()
-       message = 'Thanks! We will get back to you shortly.'
-       form = ' '
-    
+       post.save()           
     if "resume" in request.POST:
       if form1.is_valid():
        post = form1.save(commit=False)
        post.save()
-       message = 'Thanks! We will get back to you shortly.'
-       form1 = ' '
-
-    return render(request, 'home.html', {'form': form,'form1' :form1 ,  'message' :message  })    
+    return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'displaya' :displaya , 'message' :message  })    
   else:
     message = ''
     display = 'block'
