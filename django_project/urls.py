@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from answers import views,urls
-from django_project.views import home,about,services,hire,contact,blog,career,contacted
+from django_project.views import home,about,services,hire,contact,blog,career,contacted,resume
 
 
 urlpatterns = [
@@ -27,7 +27,7 @@ urlpatterns = [
     url(r'^work-with-pivotchain/$', hire , name='hire'),
     url(r'^contact-us/$', contact , name='contact'),
     url(r'^contacted/$', contacted , name='contacted'),
-
+    url(r'^resume/$', resume , name='resume'),
 
     url(r'^work-at-pivotchain/$', career , name='career'),
     url(r'^blog/', include('answers.urls', namespace="answers")),
