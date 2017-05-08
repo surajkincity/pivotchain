@@ -19,19 +19,20 @@ def home(request):
     form1 = leadsform(request.POST)
     if "contact" in request.POST:
       if form.is_valid():
-      post = form.save(commit=False)
-      post.save()
-      message = 'Thanks! We will get back to you shortly.'
-      form = ' '
-      display = 'none'
-      return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })
+       post = form.save(commit=False)
+       post.save()
+       message = 'Thanks! We will get back to you shortly.'
+       form = ' '
+       display = 'none'
+       return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })
     if "resume" in request.POST:
-      post = form1.save(commit=False)
-      post.save()
-      message = 'Thanks! We will get back to you shortly.'
-      form1 = ' '
-      display = 'none'
-      return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })    
+      if form.is_valid():
+       post = form1.save(commit=False)
+       post.save()
+       message = 'Thanks! We will get back to you shortly.'
+       form1 = ' '
+       display = 'none'
+       return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })    
   else:
     message = ''
     display = 'block'
