@@ -24,8 +24,7 @@ def home(request):
        form = ' '
        display = 'none'
        return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })
-      
-    
+          
   else:
     message = ''
     display = 'block'
@@ -45,13 +44,13 @@ def resume(request):
        message = 'Thanks! We will get back to you shortly.'
        form1 = ' '
        display = 'none'
-       return render(request, 'resume.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })   
+    return render(request, 'resume.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })   
   else:
     message = ''
     display = 'block'
     form = contactform()
     form1 = leadsform()
-    return HttpResponseRedirect(self.get_success_url())
+    return HttpResponseRedirect()
 
  
 
