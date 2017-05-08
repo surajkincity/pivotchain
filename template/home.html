@@ -1,0 +1,827 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}Analytics and datascience service providers | PivotChanin{% endblock %}
+
+{% block content %}
+
+<header class="header header2 slideIn animated" id="stricky">
+                        <nav class="navbar navbar-default pr-menu pr2-menu">
+                <div class="container">
+                    <!--========== Brand and toggle get grouped for better mobile display ==========-->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png' %}" style="width: 40px;display: inline-block;" alt=""><span class="logotext" style="color:#5a5a5a;" >PIVOTCHAIN</span></a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!--========== Collect the nav links, forms, and other content for toggling ==========-->
+                    <ul class="nav navbar-nav nav-right navbar-right">
+                        
+                        <li>
+                           <a href="#contactlink" class="btn g-btn" style="">
+                                Let's talk
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-right navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav menu" id="nav">
+                            <li class="current"><a href="#home">Home</a></li>
+                            <li class=""><a href="#aboutlink">About</a></li>
+                            <li class=""><a href="#servicelink">Services</a></li>                    
+                            <li class=""><a href="#bloglink">Blog</a></li>
+                            <li class=""><a href="#careerlink">Career</a></li>
+
+
+
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        </header>
+
+
+
+
+
+
+
+
+<section id='home' class="kickstarter-hero" id="home" style="background:url('{% static 'img/background.jpg' %}');background-color: rgba(255, 255, 255, .4) !important;
+    background-attachment: fixed;
+    background-blend-mode: color;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+
+       
+<div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="kickstarter-content">
+                            <h2>We build Data science & Analytics solutions</h2>
+                            <p> Your partner in the journey from tradition to transformation, we build Data science & Analytics solutions for governments & enterprises</p>
+                            <a class="btn larg-btn green" href="#about">Read About us</a> 
+                            <a class="btn larg-btn red" href="#services">Our Services</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="kickstarter-image wow zoomIn  animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: zoomIn;">
+                            <img src="{% static 'img/analytics.png' %}" alt="" >
+                        </div>
+                    </div>
+                </div>
+</div>
+
+ </section>
+
+
+<section id="about" class="section-4 section" style="padding: 5%;    ">
+<div id='aboutlink' style="height: 100px;margin-top: -100px;visibility: hidden;display: block;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2" style="
+    padding-bottom: 4%;
+    text-align: center;
+">
+                <h2 style="
+    font: 600 50px/60px &quot;Montserrat&quot;, sans-serif;
+    color: #1a264a;
+"> About us</h2>
+                <p style="font-size: 17px;">Pivotchain is a purpose built Data Science company with deep learning expertise to simplify predictive analytics to solve hard data problems.</p>
+            </div>
+        
+        <div class="row">
+        <div class="col-md-6">
+        
+            <div class="col-md-offset-1 col-md-2 wow fadeInDown  animated">
+            <img src="/static/img/advantage-1.png" alt="">
+            </div>
+            <div class="col-md-9">
+            <h5>Competency</h5>
+            <p>We are a team of battle hardened data scientists and mathematicians with experience in banking, finance , retail and transportation domain.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+        
+            <div class="col-md-offset-1 col-md-2 wow fadeInDown  animated">
+            <img src="/static/img/advantage-2.png" alt="">
+            </div>
+            <div class="col-md-9">
+            <h5>Agile team</h5>
+            <p>As a team we are organised to deliver solutions under shorter duration and multiple iterations.</p>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+        
+            <div class="col-md-offset-1 col-md-2 wow fadeInDown  animated">
+            <img src="/static/img/advantage-3.png" alt="">
+            </div>
+            <div class="col-md-9">
+            <h5>Integrity</h5>
+            <p>We maintain high integrity standards and ensure data security of our clients.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+        
+            <div class="col-md-offset-1 col-md-2 wow fadeInDown  animated">
+            <img src="/static/img/advantage-4.png" alt="">
+            </div>
+            <div class="col-md-9">
+            <h5>Customization</h5>
+             <p>We believe in building solutions which can be customized by end users for exteding it to a weider use.</p>
+            </div>
+        </div>
+        </div>
+
+
+                
+       </div> 
+    </div>
+</section>
+
+
+<div class="fusion-fullwidth fullwidth-box nonhundred-percent-fullwidth" style="    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);background-color: #14e06e;background-position: left top;background-repeat: no-repeat;padding-top:35px;padding-right:34px;padding-bottom:20px;padding-left:30px;font-weight:800;border-top-width:0px;border-bottom-width:0px;border-color:#eae9e9;border-top-style:solid;border-bottom-style:solid;"><div class="fusion-builder-row fusion-row "><div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_1  fusion-one-full fusion-column-first fusion-column-last fusion-column-no-min-height 1_1" style="margin-top:0px;margin-bottom:0px;"><div class="fusion-column-wrapper" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;" data-bg-url=""><h2 style="text-align: center; font-size: 30px; line-height: 40px;" data-inline-fontsize="true" data-inline-lineheight="true" data-fontsize="30" data-lineheight="40"><span style="color: #ffffff;font-weight:800;font-size:36px;">
+<div id='servicelink' style="height: 100px;margin-top: -100px;visibility: hidden;display: block;"></div>
+<icon class="glyphicon glyphicon-cog" style='margin-top: -7px;
+    vertical-align: middle;' > </icon>
+	Services
+</span></h2><div class="fusion-clearfix"></div></div></div></div></div>
+<!--
+<div style="    margin: auto;
+    width: 50px;    z-index: 99;
+    position: absolute;
+    left: 48.3%;
+    padding: 0px;
+    background-color: #14e06e;
+    height: 50px;
+    transform: rotate(-45deg);
+    margin-top: -25px;" float='center'></div>
+
+
+<section id='services' class="pr-2-power-features kickstart-pr-2" id="indiego" style="border-top:0px;background-color: white;">
+            <div class="container">
+           
+                <div class="section-title">
+                    <h2 class="th-h2">Data science & analytics</h2>
+                    <p style="text-align: justify;">Data is the new gold of 21st century, we help you discover actionable insights instead of just reports & Dashboards Our team of talented data scientists help you connect the dots between various data sources (internal & external).</p>
+                </div>
+                <div class="row pr-2-features kickstarter-project">
+                    <div class="col-sm-4  col-sm-offset-1" >
+                        <div class="kickstart-project-img wow zoomIn  animated">
+                            <img src="{% static 'img/s2.png'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6  pr-2-features-content ">
+                        
+                       <div class="col-sm-6 ">
+                       <ul>
+                       <li><i class="glyphicon glyphicon-ok"></i>Risk modeling</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Pricing optimization</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Credit scorecards</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Churn prediction</li>
+                     
+                        </ul>
+                       </div>
+                       <div class="col-sm-6">
+                        <ul>
+                       <li><i class="glyphicon glyphicon-ok"></i>Customer segmentation</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Shopping cart abandonment</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Real-time Sales analytics</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Stream computing</li>
+             
+                        </ul>
+                       </div>
+                        
+                            
+                        <a href="#contact" class="btn larg-btn green wow zoomIn  animated">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+-->
+
+<section id='services' class="features-area2 pr-2-image-features" style="border:none;">
+            <div class="row col-height m0">
+                    <div class="col-sm-6 p0 left-inner-content">
+                    <img src="https://www.ibm.com/analytics/us/en/industry/insurance-solutions/images/Insurance-Leadspace-Aniamted.gif" alt="">
+                       
+                    </div>
+                    <div class="col-sm-6 p0 right-inner-content">
+                        <div class="features-content wow zoomIn  animated">
+                        <div id='fo1'>
+                            <h2>Data science & analytics</h2>
+                            <p>Data is the new gold of 21st century, we help you discover actionable insights instead of just reports & Dashboards Our team of talented data scientists help you connect the dots between various data sources (internal & external).</p>
+                            <a class="btn larg-btn green" onclick="show()">Learn more</a>
+
+                            </div>
+
+
+                            <div id='foo' class="col-sm-12  pr-2-features-content" style="display: none;padding-top: 0px;">
+                        <h2 class="th-h2">Key services</h2>
+                       <div class="col-sm-6 ">
+
+                       <ul>
+                       <li><i class="glyphicon glyphicon-ok"></i>Risk modeling</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Pricing optimization</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Credit scorecards</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Churn prediction</li>
+                     
+                        </ul>
+                       </div>
+                       <div class="col-sm-6">
+                        <ul style="    width: 250px;">
+                       <li><i class="glyphicon glyphicon-ok"></i>Customer segmentation</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Shopping cart abandonment</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Real-time Sales analytics</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Stream computing</li>
+             
+                        </ul>
+                       </div>
+                        
+                            
+                       
+                    </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row m0 col-height two-row">
+                    <div class="col-sm-6 p0 left-inner-content">
+                         <img src="{% static 'img/ser2.gif' %}" alt="">
+                    </div>
+                    <div class="col-sm-6 p0 right-inner-content">
+                        <div class="features-content wow zoomIn  animated">
+                        <div id='fo2'>
+                            <h2>Blockchain & Web3.0 services</h2>
+                            <p>Blockchain is the internet of 21st century; we help you connect your organization on the new decentralised global computer. We help our customers build.</p>
+                            <a class="btn larg-btn green" onclick="show1()">Learn more</a>
+                            </div>
+
+
+                            <div id='foo2' class="col-sm-12  pr-2-features-content" style="display: none;padding-top: 0px;">
+                            
+                        <h2 class="th-h2">Key services</h2>
+                       <div class="col-sm-6">
+                        <ul>
+                            <li><i class="glyphicon glyphicon-ok"></i>Antifragile applications.</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Web 3.0 applications</li>
+                        </ul>
+                       </div>
+                       <div class="col-sm-6">
+                        <ul style="    width: 250px;">
+                            <li><i class="glyphicon glyphicon-ok"></i>Blockchain solutions(DAPPS)</li>
+                            <li><i class="glyphicon glyphicon-ok"></i>Smart contracts</li>
+                        </ul>
+                       </div>
+                    </div>
+
+
+
+
+                      
+                        
+                            
+                       
+                    </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+
+
+
+<!--
+
+
+<section class="pr-2-power-features" id="kick" style="padding-top: 4%;">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="th-h2">Blockchain & Web3.0 services</h2>
+                    <p style="text-align: justify;">Blockchain is the internet of 21st century; we help you connect your organization on the new decentralised global computer. We help our customers build.</p>
+                </div>
+                <div class="row pr-2-features kickstarter-project">
+                    <div class="col-sm-4 col-sm-offset-1">
+                        <div class="kickstart-project-img wow zoomIn  animated">
+                            <img src="{% static 'img/s1.png'%}" alt="" style="width: 200px;">
+                        </div>
+                    </div>
+                    <div class="col-sm-6  pr-2-features-content" style="padding-top: 20px;">
+                     
+                       <div class="col-sm-6">
+                        <ul>
+                            <li><i class="glyphicon glyphicon-ok"></i>Antifragile applications.</li>
+                       <li><i class="glyphicon glyphicon-ok"></i>Web 3.0 applications</li>
+                        </ul>
+                       </div>
+                       <div class="col-sm-6">
+                        <ul>
+                            <li><i class="glyphicon glyphicon-ok"></i>Blockchain solutions(DAPPS)</li>
+                            <li><i class="glyphicon glyphicon-ok"></i>Smart contracts</li>
+                        </ul>
+                       </div>
+                       
+
+                       
+                       
+                            
+                        <a href="#contact" class="btn larg-btn green wow zoomIn  animated">Get in touch</a>
+                    </div>
+                </div>
+            </div><br><br>
+        </section>
+
+
+
+-->
+
+
+
+<section id='hww' style="background-color: #f5f5f5;    padding: 6%;
+    border-top: none;">
+	<div class="container">
+	<div class="row">
+	<div class="col-md-4" style="padding: 15px;">
+	
+	<h2 style="    font-weight: 300;
+    margin-bottom: 10px;font-size: 42px;">
+    How we work </h2>
+    <a class="btn larg-btn green wow zoomIn  animated">Our Process</a>
+    
+	</div>
+	
+	<div class="col-sm-4 wow animated animated">
+	<div class="middle-section blog-section wow animated animated" style="visibility: visible;">
+                                <h4><i class="glyphicon glyphicon-king wow zoomIn  animated"></i> 1.BrainStorm</h4>
+                                <p>
+We facilitate ideation workshops & conduct meetup sessions with your teams regularly to narrow down the key challenges faced by your business & build consensus on the expected outcome.</p>
+                            
+                                
+                            </div>
+	</div>
+	<div class="col-sm-4 wow animated animated">
+	<div class="middle-section blog-section wow animated animated" style="visibility: visible;">
+                                
+                                
+                                    <h4><i class="glyphicon glyphicon-search wow zoomIn  animated"></i> 2.Research</h4>
+                                    <p>As a data-driven organization, we conduct extensive technical research on the problem statement & the required solution, gathering key risks & challenges.</p>
+                            
+                                
+                            </div>
+	</div>
+	</div>
+<!--
+<div class="row" style="padding:20px;">
+<div style="border-radius: 50%; border:4px dashed grey;">
+</div>. -->
+
+
+	<div class="row">
+	<div class="col-sm-4 wow animated animated">
+	<div class="middle-section blog-section wow animated animated" style="visibility: visible;">
+                                
+                                
+                                
+                                    <h4><i class="glyphicon glyphicon-book wow zoomIn  animated"></i> 3.Prototype</h4>
+                                    <p>Build an MVP (Minimal Viable Product) prototype as a Proof of concept of key challenges before committing to a larger solution.</p>
+                                </div>
+                            
+                                
+                        
+	</div>
+
+	<div class="col-sm-4 wow animated animated">
+	<div class="middle-section blog-section wow animated animated" style="visibility: visible;">
+                                
+                               
+                         
+                                    <h4><i class="glyphicon glyphicon-cog wow zoomIn  animated"></i> 4.Development</h4>
+                                    <p>Once the MVP is built, we go through further iterations of incremental changes to arrive at the agreed result.</p>
+                            
+                                
+                            </div>
+	</div>
+	<div class="col-sm-4 wow animated animated">
+	<div class="middle-section blog-section wow animated animated" style="visibility: visible;">
+                              
+                                    <h4><i class="glyphicon glyphicon-cloud wow zoomIn  animated"></i> 5.Deploy</h4>
+                                    <p>We help you deploy (go-live) the solution using DevOps automation.</p>
+                            
+                                
+                            </div>
+	</div>
+
+	</div>
+	</div>
+	</div>
+
+</section>
+
+
+
+<!--
+<section id='blog' class="blog-area form-blog" id="blog" style="padding-top: 5%;">
+            <div class="container" style="text-align: center;">
+    
+                <div class="row blogs">
+                {% for x in blogs reversed %}
+
+                     <div class="col-md-4 col-sm-6">
+                        <div class="blog-item wow fadeIn  animated" data-wow-delay="0s" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0s; animation-name: fadeIn;">
+                            <a href="#" class="img">
+                                <img class="img-responsive" src="//neilpatel.com/wp-content/uploads/2017/04/sitemap-460x277.jpg" alt="">
+                            </a>
+                            <div class="texts">
+                                <span>{{x.date}}</span>
+                                <h2 class="th-h2"><a href="{% url 'answers:show' slug=x.slug %}">{{x.title}}</a></h2>
+                                <p>{{x.slug}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                  {% endfor %}
+
+
+
+
+
+
+
+               </div>
+
+            </div>
+ </section>
+
+-->
+
+
+
+<section class="blog-area form-blog" id="blog" style="padding:5%;background:url('{% static 'ab.jpg' %}');background-color: rgba(255, 255, 255, .4) !important;
+    background-attachment: fixed;
+    background-blend-mode: color;
+    background-size: cover;">
+    <div id='bloglink' style="height: 100px;margin-top: -100px;visibility: hidden;display: block;"></div>
+            <div class="container" style="text-align: center;">
+                <div class="section-title">
+                    <h2 class="th-h2" style="margin-bottom: 0px;">Our latest blogs</h2>
+               
+                </div>
+                <div class="row blogs">
+           
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-item wow fadeIn  animated" data-wow-delay="0s" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0s; animation-name: fadeIn;">
+                            <a href="#" class="img">
+                                <img class="img-responsive" src="http://droitthemes.com/html/inova/v1/main/image/blog/1.jpg" alt="">
+                            </a>
+                            <div class="texts">
+                                <span>7 May</span>
+                                <h2 class="th-h2"><a href="{% url 'answers:show' slug='Introductory-blog' %}">Introductory blog</a></h2>
+                                <p>Preamble: Data is everything: How well you use your data, determines the degree of your success.</p>
+                            </div>
+                        </div>
+                    </div>
+               
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-item wow fadeIn  animated" data-wow-delay="0.3s" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0.3s; animation-name: fadeIn;">
+                            <a href="#" class="img">
+                                <img class="img-responsive" src="http://droitthemes.com/html/inova/v1/main/image/blog/2.jpg" alt="">
+                            </a>
+                            <div class="texts">
+                                <span>21 April 2017</span>
+                                <h2 class="th-h2"><a href="#">Sed do eiusmod tempor incididunt</a></h2>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-item wow fadeIn  animated" data-wow-delay="0.6s" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0.6s; animation-name: fadeIn;">
+                            <a href="#" class="img">
+                                <img class="img-responsive" src="http://droitthemes.com/html/inova/v1/main/image/blog/3.jpg" alt="">
+                            </a>
+                            <div class="texts">
+                                <span>20 April 2017</span>
+                                <h2 class="th-h2"><a href="#">Duis aute irure dolor reprehenderit </a></h2>
+                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <span style="text-align: center;"> <a class="btn larg-btn green" style="margin-top: 70px;" href="{% url 'answers:blogindex' %}">All blogs</a> </span>
+            </div>
+        </section>
+
+
+<section class="faq-area-2 pr-2-faq" id="career" style="padding: 5%;">
+<div id='careerlink' style="height: 100px;margin-top: -100px;visibility: hidden;display: block;"></div>
+            <div class="container">
+                <div class="section-title">
+                    <h2 style=" font-size: 42px;font-weight: 800;color: #1a264a;text-align: center;">Career</h2>
+
+                    <p>
+At Pivotchain, we're building a world-class Analytics solutions helping our customers globally solve difficult data problem. </p> <p>We offer you an inspiring and challenging atmosphere in which you can develop and flourish. We are looking for passionate Mathematicians, Data scientists and Programmers who have a wil to succeed under pressure.
+                    </p>
+          
+                </div>
+                <div class="row pr-2-faq-inner">
+
+
+                    <div class="col-md-5 col-sm-12 faq-img pull-right wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        
+                    
+
+                 <!--                        {{ message }}
+                     <form method="POST" style="display:{{display}};width: 110%;    text-align: center;">
+  {% csrf_token %}
+
+      {{ form.as_p }}
+
+  <button type="submit" name="" style="width: 68%;margin-top: 15px;" class="btn larg-btn green">Send
+                        </button>
+
+ 
+              
+                </form>
+              -->
+                    </div>
+                    <div class="col-md-10 col-md-offset-1 col-sm-12" >
+
+ 
+
+                        <div class="panel-group faq-inner-accordion" id="accordion" style="padding-bottom: 40px;">
+                        <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="btn-accordion collapsed" aria-expanded="false">
+                                            <i class="glyphicon glyphicon-plus plus"></i><i class="glyphicon glyphicon-minus minus"></i>Data scientist
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse6" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                    <div class="panel-body">
+                                    <div class="col-md-8">
+                                    <ul style="list-style-type: square;"><li>You are good at Linear algebra, statistics &amp; Probability skills, such as distributions, statistical testing, regression, etc</li><li>You take pride in your knowledge of design patterns, algorithms and data structures</li><li>You are comfortable processing, cleansing, and verifying the integrity of data used for analysis</li><li>You understand machine learning techniques and algorithms, such as k-NN, Naive Bayes, SVM, Decision Forests, CART, CHAID etc</li><li>You understand feature selection, model performance metrics, building and optimizing machine learning models</li><li>You are good at doing ad-hoc analysis and presenting results in a clear manner</li><li>You are good at creating automated anomaly detection systems and constant performance tracking</li><li>You can code comfortably in R &amp; Python (NumPy, sklearn, xgboost)</li><li>You are experienced with data stores such as Mysql, MongoDB, Cassandra, HBase, Hive</li><li>You are experienced with data visualisation tools, such as Tableau, D3.js, GGplot, etc</li><li>You have a BS/MS degree in Computer science, Maths</li><li>Past experience with Deep Learning/NLP would be an advantage (although not necessary)</li></ul></div>
+                                    <div class="col-sm-4">
+                                    <img src="{% static 'img/ds.png' %}" style="width: 100%;">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            </div>
+                        <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="btn-accordion collapsed" aria-expanded="false">
+                                            <i class="glyphicon glyphicon-plus plus"></i><i class="glyphicon glyphicon-minus minus"></i>Backend Expert
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                    <div class="panel-body">
+                                    <div class="col-md-8">
+                                    <ul style="list-style-type: square;"><li>You can think like an Architect &amp; act like a Developer &amp; Lead like a scrum master</li><li>You take pride in your knowledge of design patterns, algorithms and data structures</li><li>You are comfortable designing &amp; developing scalable web applications</li><li>You are polyglot with at least 2 of following languages: Nodejs, Go, Python, Php, Java, Scala, Ruby</li><li>You are comfortable with databases: MySQL, MongoDB, Cassandra, Redis, SQL/JSON in general</li><li>You have worked on at least one of the cloud following cloud platforms: AWS, Azure or Bluemix</li><li>You are familiar with Micro service architecture &amp; API design</li><li>You are familiar with JSON, XML data formats &amp; REST, SOAP &amp; RPC protocols (P2P would be added benefit)</li><li>Past experience with Fintech, P2P lending, Investment Banking or Insurance sectors would be an advantage (although not necessary)</li></ul></div>
+                                    <div class="col-sm-4">
+                                    <img src="{% static 'img/bd.png' %}" style="width: 100%;">
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="btn-accordion collapsed" aria-expanded="false">
+                                            <i class="glyphicon glyphicon-plus plus"></i><i class="glyphicon glyphicon-minus minus"></i>Frontend expert
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                    <div class="panel-body">
+                                    <div class="col-md-8">
+                                    <ul style="list-style-type: square;"><li>You are an expert in HTML/HTML5 (Semantic web), CSS/CSS3/Bootstrap</li><li>You are very strong in JavaScript (jQuery, AngularJS, Knockout, etc) skills.</li><li>You know how to handle compatibility quirks across browsers &amp; create responsive designs</li><li>You are comfortable with PHP, Git, MYSQL, Angular.JS, AJAX, JSON, XML, WebSocket</li><li>You can work on Wireframing, UI/UX Design &amp; Photoshop as needed</li><li>Any experience with D3js, Kibana, Tableau &amp; other dashboard softwares would be an advantage (although not necessary)</li></ul></div>
+                                    <div class="col-sm-4">
+                                    <img src="{% static 'img/fd.png' %}" style="width: 100%;">
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse21" class="btn-accordion collapsed" aria-expanded="false">
+                                            <i class="glyphicon glyphicon-plus plus"></i><i class="glyphicon glyphicon-minus minus"></i>DevOps Guru
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse21" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                    <div class="panel-body">
+                                    <div class="col-md-8">
+                                    <ul style="list-style-type: square;"><li>You are an automation maniac</li><li>You are a Linux (Centos, Ubuntu) ninja</li><li>You are an open source evangelist</li><li>You have exceptional knowledge on encryption, security &amp; networking</li><li>You have hands on cloud experience (At least one of the three: AWS, Azure or bluemix)</li><li>You are a talented engineer with mastery of github, Jenkins, Dockers, vagrant, ansible, Python, Powershell.</li><li>Understanding of what a blockchain is, would be an added advantage (although not necessary)</li></ul>
+                                    </div>
+                                    <div class="col-sm-4">
+                                    <img src="{% static 'img/dv.png' %}" style="width: 100%;">
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                        <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="btn-accordion collapsed" aria-expanded="false">
+                                            <i class="glyphicon glyphicon-plus plus"></i><i class="glyphicon glyphicon-minus minus"></i>Blockchain expert
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                    <div class="panel-body">
+                                    <div class="col-md-8">
+                                    <ul style="list-style-type: square;"><li>You are polyglot with at least 2 of following languages: (C, C++, Golang, haskell, scala &amp; Python)</li><li>You have hands-on technical knowledge of Hyperledger, Ripple, Digital Asset, Multichain, Sidechain or Ethereum</li><li>You understand or have implemented smart contracts on Ethereum (Solidity) or Hyperledger (Chaincode)</li><li>You have a good understanding of encryption &amp; cryptography (SHA/ECDSA, pub/priv key, hash functions, signatures and certificates)</li><li>You have an ability to quickly grasp complex business problems &amp; can work on MVP as needed</li><li>You can assess and recommend changes to meet the business needs, based on clients’ needs.</li><li>You have a BS/MS degree in Computer science or Maths</li><li>Any experience in computational number theory would be an added advantage</li><li>Past implementation experience on blockchain or cryptography experience would be a def inite advantage</li></ul></div>
+                                    <div class="col-sm-4">
+                                    <img src="{% static 'img/bl.png' %}" style="width: 100%;">
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="btn-accordion collapsed" aria-expanded="false">
+                                            <i class="glyphicon glyphicon-plus plus"></i><i class="glyphicon glyphicon-minus minus"></i>Marketing and PR specialist
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse5" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                    <div class="panel-body">
+                                    <div class="col-md-8">
+                                    <ul style="list-style-type: square;"><li>You are good at digital marketing</li><li>You can work on strategy, support, planning, research and tactical execution of public relations &amp; Media events</li><li>You can manage social presence for Pivotchain on Twitter, LinkedIn &amp; Facebook</li><li>You are good at researching &amp; building relationships with editors, columnists, bloggers and response to press inquiries</li><li>You are good at researching top influencers, competitors, and trends in the industry</li><li>You understand the web based solutions, following up on assignments with multiple parties to ensure projects are completed on time</li><li>You can independently perform other duties and assisting with special projects as assigned</li><li>You can successfully managing complex, fast-moving and unexpected communications challenges</li><li>You have some experience in public relations in tech &amp; digital currency would be helpful</li><li>Excellent organization skills and written and oral communication skills required</li><li>Experience working in a fast-paced, start-up environment</li><li>You are comfortable to travel as required to attend road shows, events, customer visits &amp; partner relations</li></ul></div>
+                                    <div class="col-sm-4">
+                                    <img src="{% static 'img/mk.png' %}" style="width: 100%;">
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+<img src="http://www.blackdotsinteriors.com/slider/02_banner.jpg" style="
+    border-radius: 4px;
+    width: 100%;
+    height: 250px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) !important;
+">
+</div>                
+<div class="col-md-4 ">
+
+
+<form method="POST" style="display:{{display}};margin-left: 10%;">
+  {% csrf_token %}
+
+      {{ form1.as_p }}
+    
+ <button type="submit" name="" style="width: 88%;margin-top: 15px;" class="btn larg-btn green">Send
+                        </button>
+</form>
+
+
+                <form method="POST" style="display:block;width: 100%;    text-align: center;">
+  <input type="hidden" name="csrfmiddlewaretoken" value="S8b8fjYVNmyfqfBrRFJ5kDBOLo67r3KS">
+
+<input id="id_name" maxlength="5000" name="name" type="text" placeholder="Name"></p>
+<input id="id_email" maxlength="5000" name="email" type="text" placeholder="Email"></p>
+<input id="fileInput" type="file">
+<button id="btn" class="btn larg-btn red" type="submit" style="width: 100%;    margin-top: 5px;
+    margin-bottom: 5px;
+    
+">Upload Resume</button>
+  <button type="submit" name="" style="width: 100%;margin-left: -8px;margin-top: 10px;" class="btn larg-btn green">Send
+                        </button></p>
+
+                </form> 
+                <br>
+</div>
+<diV class='col-md-1'>
+</diV>
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id='contact' class="features-area2 pr-2-image-features" style="padding-top: 5%;padding-bottom: 5%;background: url(static/ctus.jpg);
+    background-attachment: fixed;">
+    <div id='contactlink' style="height: 100px;margin-top: -100px;visibility: hidden;display: block;"></div>
+
+<div class="row">
+                <div class="container" style="padding-bottom: 30px;">
+                <div class="section-title" style="padding-bottom: 20px;">
+                    <h2 class="th-h2" style="margin-bottom: 8px;font-size:44px;">Contact us</h2>
+               <ul style="color: #1a264a;">
+                            
+                            <li><i class="glyphicon glyphicon-globe"></i> <a style="color: #1a264a;" href="mailto:contact@pivotchain.com"> Contact@pivotchain.com</a> &nbsp;&nbsp; <i class="glyphicon glyphicon-envelope"></i> Pivotchain , Viman Nagar - Pune</li>
+                            </ul>
+                </div>
+
+                <div class="col-sm-5 col-sm-offset-1" style="padding-top: 10px;    padding-left: 40px;">
+
+               
+ <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15128.485227442017!2d73.908533!3d18.568569!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6efd99d32587502!2sPivotchain+Solutions!5e0!3m2!1sen!2sin!4v1492497697657" width="600" height="450" frameborder="0" scrolling="no" style='border: 1px solid #cccccc !important;width:100% !important;height:275px !important;border-radius: 2px !important;box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25)  !important;' frameborder="0"  allowfullscreen></iframe>
+
+                </div>
+                      
+
+
+                       
+                
+
+                    <div class="col-sm-6 " style="width: 45%;">
+                    
+   <!--                  {{ message }}
+                     <form method="POST" style="display:{{display}};width: 110%;    text-align: center;">
+  {% csrf_token %}
+
+      {{ form.as_p }}
+
+  <button type="submit" name="" style="width: 73%;margin-top: 15px;" class="btn larg-btn green">Send
+                        </button>
+
+ 
+              
+                </form>-->
+               {{ message }} <form method="POST" style="display:{{display}};margin-left: 10%;">
+  {% csrf_token %}
+
+      {{ form.as_p }}
+ <button type="submit" name="" style="width: 88%;margin-top: 15px;" class="btn larg-btn green">Send
+                        </button>
+  
+
+ 
+              
+                </form>
+
+<!--
+                <form method="POST" style="display:block;width: 110%;    text-align: center;">
+  <input type="hidden" name="csrfmiddlewaretoken" value="S8b8fjYVNmyfqfBrRFJ5kDBOLo67r3KS">
+
+      <p><label for="id_name">Name:</label> <input id="id_name" maxlength="5000" name="name" type="text" placeholder="Name"></p>
+<p><label for="id_email">Email:</label> <input id="id_email" maxlength="5000" name="email" type="text" placeholder="Email"></p>
+<p><label for="id_message">Message:</label> <textarea cols="40" id="id_message" name="message" rows="10" placeholder='Your message' style="margin-top: -10px;"></textarea></p>
+
+  <button type="submit" name="" style="width: 73%;margin-top: 15px;" class="btn larg-btn green">Send
+                        </button>
+
+ 
+              
+                </form>-->
+                        
+                    </div>
+
+
+
+                    
+                    </div>
+                </div>
+
+              
+
+                
+
+        </section>
+
+{% endblock %}

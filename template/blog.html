@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}Datascience and Blockchain Blog | PivotChanin{% endblock %}
+{% block menu %}
+<style type="text/css">
+.col-sm-6 {}
+	.logotext {    color: #f0f0f0 !important;}
+	.navbar.navbar-default.pr-menu.pr2-menu .menu li a {
+    color: white !important;
+}
+
+.navbar.navbar-default.pr-menu.pr2-menu .nav-right li a {
+    color: white;
+}
+.navbar.navbar-default .nav-right li a {    background: #1574d4; }
+.g-btn {background-color: #1574d4;}
+.col-sm-6 p {padding-top: 30px;}
+.name {font-size: 24px;font-style: italic;}
+.pr-2-features-content div{text-align: left;}
+</style>
+                            <li class=""><a href="{% url 'home' %}">Home</a></li>
+                            <li class=""><a href="{% url 'about' %}">About</a></li>
+                            <li class=""><a href="{% url 'services' %}">Services</a></li>                    
+                            <li class="current"><a href="{% url 'blog:blogindex' %}">Blog</a></li>
+                            <li class=""><a href="{% url 'career' %}">Career</a></li>
+{% endblock %}
+{% block content %}
+
+<section class="kickstarter-hero" id="home" style="background: url(https://www.ivend.com/omnichannel/images/Blog-banner.jpg);
+    background-attachment: fixed;
+    background-blend-mode: color;
+    padding: 7% 0px 4%;
+    border-top: 0px solid;
+    background-color: rgba(0, 0, 0, .4) !important;">
+
+       
+<div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2" style="text-align: center;">
+                        <div class="kickstarter-content">
+                            <h1 style="color: white;font-size: 5em;">Our Blog</h1>
+                            <p style="color: white;padding: 2% 5% 2%;"> Here are some of our latest blog posts on Blockchain and data science.</p>
+                           
+                        </div>
+                    </div>
+
+                </div>
+</div>
+
+ </section>
+
+<section class="blog-area form-blog" id="blog" style="padding-top: 5%;">
+            <div class="container" style="text-align: center;">
+    
+                <div class="row blogs">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-item wow fadeIn  animated" data-wow-delay="0s" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0s; animation-name: fadeIn;">
+                            <a href="#" class="img">
+                                <img class="img-responsive" src="//neilpatel.com/wp-content/uploads/2017/04/sitemap-460x277.jpg" alt="">
+                            </a>
+                            <div class="texts">
+                                <span>22 April 2017</span>
+                                <h2 class="th-h2"><a href="#">Quis nostrud exercitation ullamco</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-item wow fadeIn  animated" data-wow-delay="0.3s" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0.3s; animation-name: fadeIn;">
+                            <a href="#" class="img">
+                                <img class="img-responsive" src="//neilpatel.com/wp-content/uploads/2017/02/mobilesearch-460x277.jpg" alt="">
+                            </a>
+                            <div class="texts">
+                                <span>21 April 2017</span>
+                                <h2 class="th-h2"><a href="#">Sed do eiusmod tempor incididunt</a></h2>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-item wow fadeIn  animated" data-wow-delay="0.6s" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0.6s; animation-name: fadeIn;">
+                            <a href="#" class="img">
+                                <img class="img-responsive" src="//neilpatel.com/wp-content/uploads/2016/06/googleanalytics-460x277.png" alt="">
+                            </a>
+                            <div class="texts">
+                                <span>20 April 2017</span>
+                                <h2 class="th-h2"><a href="#">Duis aute irure dolor reprehenderit </a></h2>
+                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-item wow fadeIn  animated" data-wow-delay="0s" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0s; animation-name: fadeIn;">
+                            <a href="#" class="img">
+                                <img class="img-responsive" src="//neilpatel.com/wp-content/uploads/2017/04/sitemap-460x277.jpg" alt="">
+                            </a>
+                            <div class="texts">
+                                <span>22 April 2017</span>
+                                <h2 class="th-h2"><a href="#">Quis nostrud exercitation ullamco</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-item wow fadeIn  animated" data-wow-delay="0.3s" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0.3s; animation-name: fadeIn;">
+                            <a href="#" class="img">
+                                <img class="img-responsive" src="//neilpatel.com/wp-content/uploads/2017/02/mobilesearch-460x277.jpg" alt="">
+                            </a>
+                            <div class="texts">
+                                <span>21 April 2017</span>
+                                <h2 class="th-h2"><a href="#">Sed do eiusmod tempor incididunt</a></h2>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-item wow fadeIn  animated" data-wow-delay="0.6s" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0.6s; animation-name: fadeIn;">
+                            <a href="#" class="img">
+                                <img class="img-responsive" src="//neilpatel.com/wp-content/uploads/2016/06/googleanalytics-460x277.png" alt="">
+                            </a>
+                            <div class="texts">
+                                <span>20 April 2017</span>
+                                <h2 class="th-h2"><a href="#">Duis aute irure dolor reprehenderit </a></h2>
+                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <br> <a href="{% url 'blog' %}" class="btn larg-btn green">Load more</a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+{% endblock %}

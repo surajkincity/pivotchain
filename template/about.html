@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}About PivotChain {% endblock %}
+{% block menu %}
+<style type="text/css">
+#kick {padding: 5% !important;}
+body{    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.col-sm-6 {
+    margin: 2%;
+    width: 45%;
+    background-color: white;
+    box-shadow: 0px 4px 9px 1px rgba(0, 0, 0, 0.1);
+}
+.col-sm-6 {padding: 10px;}
+	.logotext {    color: #f0f0f0 !important;}
+	.navbar.navbar-default.pr-menu.pr2-menu .menu li a {
+    color: white !important;
+}
+.col-sm-6 img{margin: 10px;margin-right: 20px;}
+.navbar.navbar-default.pr-menu.pr2-menu .nav-right li a {
+    color: white;
+}
+.navbar.navbar-default .nav-right li a {    background: #1574d4; }
+.g-btn {background-color: #1574d4;}
+.col-sm-6 p {padding-top: 30px;}
+.name {font-size: 24px;color: #1a264a;font-weight: 800;}
+#kick p {text-align: center;padding:10px;font-size: 16px;
+    line-height: 24px;
+    color: #8a8a8a;}
+#kick h2{    display: inline-block;
+    margin: 20px 0;
+    padding: 20px 0 25px 0;
+    border: 3px solid #e9e9e9;
+    border-right: none;
+    border-left: none;
+font-size: 55px;
+    font-family: "Roboto Slab","Museo","Helvetica Neue",Helvetica,Arial,sans-serif;color: #616161 !important;padding: 25px;}
+</style>
+                            <li class=""><a href="{% url 'home' %}">Home</a></li>
+                            <li class="current"><a href="{% url 'about' %}">About</a></li>
+                            <li class=""><a href="{% url 'services' %}">Services</a></li>                    
+                            <li class=""><a href="{% url 'answers:blogindex' %}">Blog</a></li>
+                            <li class=""><a href="{% url 'career' %}">Career</a></li>
+{% endblock %}
+{% block content %}
+
+
+
+<section class="kickstarter-hero" id="home" style="background:url('{% static 'img/teambg.jpg' %}');background-color: rgba(0, 0, 0, .4) !important;
+
+    background-attachment: fixed;
+    background-blend-mode: color;
+    padding: 7% 0px 2%;
+    border-top:0px solid;">
+
+       
+<div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2" style="text-align: center;">
+                        <div class="kickstarter-content">
+                            <h1 style="color: white;font-size: 5em;">About us</h1>
+                            <p style="color: white;padding: 2% 5% 2%;"> A purpose built Data Science company with deep learning expertise to simplify banking analytics.</p>
+                           
+                        </div>
+                    </div>
+
+                </div>
+</div>
+
+ </section>
+
+
+<section class="pr-2-power-features" id="kick" style="">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Story</h2>
+                
+                </div>
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p>Pivotchain is one of the most innovative Data analytics company started with a simple idea of solving hard data problems of the industry. We provide a wide range of data science and analytics solutions along with blockchain and Web3.0 services.We give great attention to adhering the deadlines and meet the ever-changing needs of the market.  </p>
+
+<p>Our passionate team of Data scientists will personally understand your requirements to build a customized solution which meets your needs.</p>
+                    
+</div></div></section>
+<section class="pr-2-power-features" style=">
+            <div class="container">
+                <div class="row">
+
+<div class="col-sm-8 col-sm-offset-2">
+
+
+                    <div class="col-sm-6">
+                    <img src="{% static 'img/image07.jpg'%}" style="border-radius: 50%;height:100px;width: 100px;float: left;">
+                    <p><span class="name">Deepak</span>
+                    <br><span class="post">Founder, CEO </span> </p>
+                    </div>
+                    <div class="col-sm-6">
+                    <img src="{% static 'img/image08.jpg'%}" style="border-radius: 50%;height: 100px;width: 100px;float: left;">
+                    <p><span class="name">Yogendra</span>
+                    <br><span class="post">Co-Founder, COO </span> </p>
+                    </div>
+                    <div class="col-sm-6">
+                    <img src="{% static 'img/image06.jpg'%}" style="border-radius: 50%;height: 100px;width: 100px;float: left;">
+                    <p><span class="name">Pushkar</span>
+                    <br><span class="post">Full Stack Dev </span> </p>
+                    
+                    </div>
+                    <div class="col-sm-6">
+                    <img src="{% static 'img/image05.jpg'%}" style="border-radius: 50%;height: 100px;width: 100px;float: left;">
+                    <p><span class="name">Neeraj</span>
+                    <br><span class="post">VP, Sales </span> </p>
+                    </div>
+
+                    <div class="col-sm-6">
+                    <img src="{% static 'img/image02.jpg'%}" style="border-radius: 50%;height: 100px;width: 100px;float: left;">
+                    <p><span class="name">Anshul</span>
+                    <br><span class="post">Data Scientist </span> </p>
+                    
+                    </div>
+                    <div class="col-sm-6">
+                    <img src="{% static 'img/image03.jpg'%}" style="border-radius: 50%;height: 100px;width: 100px;float: left;">
+                    
+                    <p><span class="name">Suraj</span>
+                    <br><span class="post">Digital Engagement </span> </p>
+                    </div>
+                    <div class="col-sm-6">
+                    <img src="{% static 'img/image00.jpg'%}" style="border-radius: 50%;height: 100px;width: 100px;float: left;">
+                    <p><span class="name">Dhruv</span>
+                    <br><span class="post">Engineering Guru </span> </p>
+                    
+                    </div>
+                    <div class="col-sm-6">
+                    <img src="{% static 'img/image01.jpg'%}" style="border-radius: 50%;height: 100px;width: 100px;float: left;">
+                    <p><span class="name">Abhishek</span>
+                    <br><span class="post">Data Scientist </span> </p>
+                    
+                    </div>
+                    </div>
+                </div>
+
+
+                
+                
+   
+            </div>
+        </section>
+
+
+
+
+
+{% endblock %}

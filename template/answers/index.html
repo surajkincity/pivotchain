@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}Datascience and Blockchain Blog | PivotChanin{% endblock %}
+{% block menu %}
+<style type="text/css">
+.col-sm-6 {}
+	.logotext {    color: #f0f0f0 !important;}
+	.navbar.navbar-default.pr-menu.pr2-menu .menu li a {
+    color: white !important;
+}
+
+.navbar.navbar-default.pr-menu.pr2-menu .nav-right li a {
+    color: white;
+}
+.navbar.navbar-default .nav-right li a {    background: #1574d4; }
+.g-btn {background-color: #1574d4;}
+.col-sm-6 p {padding-top: 30px;}
+.name {font-size: 24px;font-style: italic;}
+.pr-2-features-content div{text-align: left;}
+</style>
+                            <li class=""><a href="{% url 'home' %}">Home</a></li>
+                            <li class=""><a href="{% url 'about' %}">About</a></li>
+                            <li class=""><a href="{% url 'services' %}">Services</a></li>                    
+                            <li class="current"><a href="{% url 'answers:blogindex' %}">Blog</a></li>
+                            <li class=""><a href="{% url 'career' %}">Career</a></li>
+{% endblock %}
+{% block content %}
+<header class="header header2 slideIn animated" id="stricky">
+                        <nav class="navbar navbar-default pr-menu pr2-menu">
+                <div class="container">
+                    <!--========== Brand and toggle get grouped for better mobile display ==========-->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png' %}" style="width: 40px;display: inline-block;" alt=""><span class="logotext" style="color:#5a5a5a;" >PIVOTCHAIN</span></a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!--========== Collect the nav links, forms, and other content for toggling ==========-->
+                    <ul class="nav navbar-nav nav-right navbar-right">
+                        
+                        <li>
+                           <a href="#contactlink" class="btn g-btn" style="">
+                                Let's talk
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-right navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav menu" id="nav">
+                            <li class="current"><a href="#home">Home</a></li>
+                            <li class=""><a href="#aboutlink">About</a></li>
+                            <li class=""><a href="#servicelink">Services</a></li>                    
+                            <li class=""><a href="#bloglink">Blog</a></li>
+                            <li class=""><a href="#careerlink">Career</a></li>
+
+
+
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        </header>
+
+
+<section class="kickstarter-hero" id="home" style="background: url(https://www.ivend.com/omnichannel/images/Blog-banner.jpg);
+    background-attachment: fixed;
+    background-blend-mode: color;
+    padding: 7% 0px 4%;
+    border-top: 0px solid;
+    ">
+
+       
+<div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2" style="text-align: center;">
+                        <div class="kickstarter-content">
+                            <h1 style="color: white;font-size: 5em;">Our Blog</h1>
+                            <p style="color: white;padding: 2% 5% 2%;"> Here are some of our latest blog posts on Blockchain and data science.</p>
+                           
+                        </div>
+                    </div>
+
+                </div>
+</div>
+
+ </section>
+
+<section class="blog-area form-blog" id="blog" style="padding-top: 5%;">
+            <div class="container" style="text-align: center;">
+    
+                <div class="row blogs">
+                {% for x in blogs reversed %}
+
+                     <div class="col-md-4 col-sm-6">
+                        <div class="blog-item wow fadeIn  animated" data-wow-delay="0s" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0s; animation-name: fadeIn;">
+                            <a href="#" class="img">
+                                <img class="img-responsive" src="//neilpatel.com/wp-content/uploads/2017/04/sitemap-460x277.jpg" alt="">
+                            </a>
+                            <div class="texts">
+                                <span>{{x.date}}</span>
+                                <h2 class="th-h2"><a href="{% url 'answers:show' slug=x.slug %}">{{x.title}}</a></h2>
+                                <p>{{x.slug}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                  {% endfor %}
+
+
+
+
+
+
+
+               </div>
+
+            </div>
+ </section>
+
+
+{% endblock %}
+
+

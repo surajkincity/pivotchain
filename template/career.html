@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}About PivotChain {% endblock %}
+{% block menu %}
+<style type="text/css">
+form input {padding:10px;border-radius: 4px;border: 1px solid lightgrey;width: 280px;}
+form textarea {width:70%;padding: 10px;margin-top: 10px;height: 150px;border-radius: 4px;border: 1px solid lightgrey;}
+.col-sm-6 {}
+	.logotext {    color: #f0f0f0 !important;}
+	.navbar.navbar-default.pr-menu.pr2-menu .menu li a {
+    color: white !important;
+}
+
+.navbar.navbar-default.pr-menu.pr2-menu .nav-right li a {
+    color: white;
+}
+.navbar.navbar-default .nav-right li a {    background: #1574d4; }
+.g-btn {background-color: #1574d4;}
+.col-sm-6 p {padding-top: 30px;}
+.name {font-size: 24px;font-style: italic;}
+.pr-2-features-content div{text-align: left;}
+
+body > section.features-area2.pr-2-image-features > div > div > div > form > p:nth-child(4) {display: block;}
+
+
+</style>
+                            <li class=""><a href="{% url 'home' %}">Home</a></li>
+                            <li class=""><a href="{% url 'about' %}">About</a></li>
+                            <li class=""><a href="{% url 'services' %}">Services</a></li>                    
+                            <li class=""><a href="{% url 'answers:blogindex' %}">Blog</a></li>
+                            <li class="current"><a href="{% url 'career' %}">Career</a></li>
+{% endblock %}
+{% block content %}
+
+
+
+<section class="kickstarter-hero" id="home" style="background:url('http://www.trillion-energy.com/img/image-banner-career.jpg');background-color: rgba(0, 0, 0, .4) !important;
+background-size: 120%;
+    background-attachment: fixed;
+    background-blend-mode: color;
+    padding: 7% 0px 2%;
+    border-top:0px solid;">
+
+       
+<div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2" style="text-align: center;">
+                        <div class="kickstarter-content">
+                            <h1 style="color: white;font-size: 5em;">Join Pivotchain</h1>
+                            <p style="color: white;padding: 2% 5% 2%;"> Be a part of our team</p>
+                           
+                        </div>
+                    </div>
+
+                </div>
+</div>
+
+ </section>
+<section class="pr-2-power-features" id="kick">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Love data science?</h2>
+                    <p>If you love data science and want to solve complex data problems, We would love to have you on board.</p>
+                </div>
+                <div class="row pr-2-features kickstarter-project">
+                    <div class="col-sm-7 col-sm-offset-1 pr-2-features-content">
+                        <h2 class="th-h2">WHO ARE YOU?</h2><br>
+                      <ul style="text-align: left;">
+
+<li><i class="glyphicon glyphicon-ok"></i> like to move fast and get things done</li>
+<li><i class="glyphicon glyphicon-ok"></i> are extremely organized and detail-oriented</li>
+<li><i class="glyphicon glyphicon-ok"></i> understand crypto assets well enough to write about them</li>
+<li><i class="glyphicon glyphicon-ok"></i> are familiar with the digital assets</li>
+<li><i class="glyphicon glyphicon-ok"></i> are highly responsive and accessible, even outside of office hours</li>
+<li><i class="glyphicon glyphicon-ok"></i> are independent but also a great collaborator</li>
+<li><i class="glyphicon glyphicon-ok"></i> can manage projects and negotiate with ease</li>
+<li><i class="glyphicon glyphicon-ok"></i> are agile and can adapt easily to ever changing priorities, needs, styles and issues</li>
+<li><i class="glyphicon glyphicon-ok"></i> love to help your team mates beyond the call of duty</li>
+</ul>
+                        <br>
+                           
+                    
+                        <a href="#" class="btn larg-btn green">Submit resume</a>
+                    </div>
+                    <div class="col-sm-4 pr-2-features-content">
+<img src="/static/img/hire.png" style="width: 100%;padding: 20px;padding-top: 40px;" alt="">
+                    </div>
+      
+                </div>
+            </div>
+        </section>
+<section class="faq-area-2 pr-2-faq" id="faq">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Job Openings</h2>
+                    <p>Here's what we are looking for.</p>
+                </div>
+                <div class="row pr-2-faq-inner">
+                    
+                    <div class="col-md-12 col-sm-12 pull-left">
+                        <div class="panel-group faq-inner-accordion" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="btn-accordion" aria-expanded="true">
+                                            <i class="glyphicon glyphicon-plus ti-plus plus"></i><i class="glyphicon glyphicon-minus ti-minus minus"></i>DevOps Guru
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in" aria-expanded="true" role="tabpanel">
+                                    <div class="panel-body">
+                                    	<ul><li>You are an automation maniac</li><li>You are a Linux (Centos, Ubuntu) ninja</li><li>You are an open source evangelist</li><li>You have exceptional knowledge on encryption, security &amp; networking</li><li>You have hands on cloud experience (At least one of the three: AWS, Azure or bluemix)</li><li>You are a talented engineer with mastery of github, Jenkins, Dockers, vagrant, ansible, Python, Powershell.</li><li>Understanding of what a blockchain is, would be an added advantage (although not necessary)</li></ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="btn-accordion collapsed" aria-expanded="false">
+                                            <i class="glyphicon glyphicon-plus ti-plus plus"></i><i class="glyphicon glyphicon-minus ti-minus minus"></i>Backend Expert
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                    <div class="panel-body"><ul><li>You can think like an Architect &amp; act like a Developer &amp; Lead like a scrum master</li><li>You take pride in your knowledge of design patterns, algorithms and data structures</li><li>You are comfortable designing &amp; developing scalable web applications</li><li>You are polyglot with at least 2 of following languages: Nodejs, Go, Python, Php, Java, Scala, Ruby</li><li>You are comfortable with databases: MySQL, MongoDB, Cassandra, Redis, SQL/JSON in general</li><li>You have worked on at least one of the cloud following cloud platforms: AWS, Azure or Bluemix</li><li>You are familiar with Micro service architecture &amp; API design</li><li>You are familiar with JSON, XML data formats &amp; REST, SOAP &amp; RPC protocols (P2P would be added benefit)</li><li>Past experience with Fintech, P2P lending, Investment Banking or Insurance sectors would be an advantage (although not necessary)</li></ul></div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="btn-accordion collapsed" aria-expanded="false">
+                                            <i class="glyphicon glyphicon-plus ti-plus plus"></i><i class="glyphicon glyphicon-minus ti-minus minus"></i>Blockchain expert
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                    <div class="panel-body"><ul><li>You are polyglot with at least 2 of following languages: (C, C++, Golang, haskell, scala &amp; Python)</li><li>You have hands-on technical knowledge of Hyperledger, Ripple, Digital Asset, Multichain, Sidechain or Ethereum</li><li>You understand or have implemented smart contracts on Ethereum (Solidity) or Hyperledger (Chaincode)</li><li>You have a good understanding of encryption &amp; cryptography (SHA/ECDSA, pub/priv key, hash functions, signatures and certificates)</li><li>You have an ability to quickly grasp complex business problems &amp; can work on MVP as needed</li><li>You can assess and recommend changes to meet the business needs, based on clients’ needs.</li><li>You have a BS/MS degree in Computer science or Maths</li><li>Any experience in computational number theory would be an added advantage</li><li>Past implementation experience on blockchain or cryptography experience would be a def inite advantage</li></ul></div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="btn-accordion collapsed" aria-expanded="false">
+                                            <i class="glyphicon glyphicon-plus ti-plus plus"></i><i class="glyphicon glyphicon-minus ti-minus minus"></i>Frontend expert
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                    <div class="panel-body"><ul><li>You are an expert in HTML/HTML5 (Semantic web), CSS/CSS3/Bootstrap</li><li>You are very strong in JavaScript (jQuery, AngularJS, Knockout, etc) skills.</li><li>You know how to handle compatibility quirks across browsers &amp; create responsive designs</li><li>You are comfortable with PHP, Git, MYSQL, Angular.JS, AJAX, JSON, XML, WebSocket</li><li>You can work on Wireframing, UI/UX Design &amp; Photoshop as needed</li><li>Any experience with D3js, Kibana, Tableau &amp; other dashboard softwares would be an advantage (although not necessary)</li></ul></div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="btn-accordion collapsed" aria-expanded="false">
+                                            <i class="glyphicon glyphicon-plus ti-plus plus"></i><i class="glyphicon glyphicon-minus ti-minus minus"></i>Data scientis
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse6" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                    <div class="panel-body"><ul><li>You are good at Linear algebra, statistics &amp; Probability skills, such as distributions, statistical testing, regression, etc</li><li>You take pride in your knowledge of design patterns, algorithms and data structures</li><li>You are comfortable processing, cleansing, and verifying the integrity of data used for analysis</li><li>You understand machine learning techniques and algorithms, such as k-NN, Naive Bayes, SVM, Decision Forests, CART, CHAID etc</li><li>You understand feature selection, model performance metrics, building and optimizing machine learning models</li><li>You are good at doing ad-hoc analysis and presenting results in a clear manner</li><li>You are good at creating automated anomaly detection systems and constant performance tracking</li><li>You can code comfortably in R &amp; Python (NumPy, sklearn, xgboost)</li><li>You are experienced with data stores such as Mysql, MongoDB, Cassandra, HBase, Hive</li><li>You are experienced with data visualisation tools, such as Tableau, D3.js, GGplot, etc</li><li>You have a BS/MS degree in Computer science, Maths</li><li>Past experience with Deep Learning/NLP would be an advantage (although not necessary)</li></ul></div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="btn-accordion collapsed" aria-expanded="false">
+                                            <i class="glyphicon glyphicon-plus ti-plus plus"></i><i class="glyphicon glyphicon-minus ti-minus minus"></i>Marketing and PR specialist
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse5" class="panel-collapse collapse" aria-expanded="false" role="tabpanel">
+                                    <div class="panel-body"><ul><li>You are good at digital marketing</li><li>You can work on strategy, support, planning, research and tactical execution of public relations &amp; Media events</li><li>You can manage social presence for Pivotchain on Twitter, LinkedIn &amp; Facebook</li><li>You are good at researching &amp; building relationships with editors, columnists, bloggers and response to press inquiries</li><li>You are good at researching top influencers, competitors, and trends in the industry</li><li>You understand the web based solutions, following up on assignments with multiple parties to ensure projects are completed on time</li><li>You can independently perform other duties and assisting with special projects as assigned</li><li>You can successfully managing complex, fast-moving and unexpected communications challenges</li><li>You have some experience in public relations in tech &amp; digital currency would be helpful</li><li>Excellent organization skills and written and oral communication skills required</li><li>Experience working in a fast-paced, start-up environment</li><li>You are comfortable to travel as required to attend road shows, events, customer visits &amp; partner relations</li></ul></div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<section class="features-area2 pr-2-image-features" style="padding: 5%;">
+<div class="row"><br><br>
+                <div class="container">
+                    <div class="col-sm-8 col-sm-offset-2">
+                    <h2 style="f    font-size: 35px;font-weight: 800;color: #1a264a;text-align: center;padding-bottom: 30px;">SEND RESUME</h2>
+
+                                         {{ message }}
+                     <form method="POST" style="display:{{display}};width: 110%;    text-align: center;">
+  {% csrf_token %}
+
+      {{ form.as_p }}
+
+  <button type="submit" name="" style="width: 75%;margin-top: 15px;" class="btn larg-btn green">Send
+                        </button>
+
+ 
+              
+                </form>
+                        
+                    </div>
+            
+                    </div>
+                </div>
+
+
+                
+        </section>
+
+{% endblock %}

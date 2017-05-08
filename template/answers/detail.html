@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}{{post.title}} | PivotChain{% endblock %}
+{% block menu %}
+
+<style type="text/css">
+.col-sm-6 {}
+  .logotext {    color: #f0f0f0 !important;}
+  .navbar.navbar-default.pr-menu.pr2-menu .menu li a {
+    color: white !important;
+}
+
+.navbar.navbar-default.pr-menu.pr2-menu .nav-right li a {
+    color: white;
+}
+.navbar.navbar-default .nav-right li a {    background: #1574d4; }
+.g-btn {background-color: #1574d4;}
+.col-sm-6 p {padding-top: 30px;}
+.name {font-size: 24px;font-style: italic;}
+.pr-2-features-content div{text-align: left;}
+</style>
+<script type="text/javascript">
+  var answers = 0;
+</script>
+                            <li class=""><a href="{% url 'home' %}">Home</a></li>
+                            <li class=""><a href="{% url 'about' %}">About</a></li>
+                            <li class=""><a href="{% url 'services' %}">Services</a></li>                    
+                            <li class="current"><a href="{% url 'answers:blogindex' %}">Blog</a></li>
+                            <li class=""><a href="{% url 'career' %}">Career</a></li>
+{% endblock %}
+{% block content %}
+
+<section class="kickstarter-hero" id="home" style="background:url('{% static 'img/teambg.jpg' %}');background-color: rgba(0, 0, 0, .7) !important;
+
+    background-attachment: fixed;
+    background-blend-mode: color;
+    padding: 7% 0px 4%;
+    border-top:0px solid;">
+
+       
+<div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1" style="text-align: left;">
+                        <div class="kickstarter-content">
+                            <h1 style="color: white;font-size: 5em;padding-bottom: 20px;font-weight: 600;">{{post.title}}</h1>
+                            <p style="color: white;padding-left: 20px;">  <span style='font-size:14px;color: white;'><b style="float: left;">By  {{post.name}}, On : {{post.date}}</b></span></p>
+                           
+                        </div>
+                    </div>
+
+                </div>
+</div>
+
+ </section>
+
+
+
+<section class="blog-area form-blog" id="blog" style="padding-top: 5%;">
+            <div class="container" style="text-align: justify;">
+            <div class="col-md-10 col-md-offset-1">
+    
+                <p>
+  {{post.body|safe}}
+</p>
+</div>
+            </div>
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% if user.is_authenticated %}
+ 
+<section style="text-align: center;border-bottom: 0px solid;">
+<div style="max-width: 730px; margin: auto;">
+<form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;text-align: left;">{% csrf_token %}
+
+{{ form.as_p }}
+
+  <input id="id_blog" maxlength="5000" name="blog" style='' type="text" value="{{post.title}}">
+
+      <button type="submit"  class="save btn btn-default" style="float: right;margin-top: 0px;">Post Comment</button>
+  </form>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+ {% else %}
+
+      <div class=" cf" style="max-width: 750px;
+    margin: auto;text-align: center;">
+<h4 style=""> <a  class="" style="" href="/admin">LogIn</a> to post Comments </h4>
+
+      
+
+      </div>
+ 
+{% endif %}
+
+
+
+
+<div class="container" style="">
+
+<div class="row">
+<div class="comments">
+
+<br>
+   {% for x in comments %}
+  {% if x.blog == post.title %}
+<script type="text/javascript"> 
+var answers = answers+1; 
+
+</script>
+  {% endif %}
+  {% endfor %}
+  <h3 style="text-align: center;">
+  <script type="text/javascript"> 
+   if (answers == 1) {
+    document.write('1 Comment');
+} else {
+    document.write(answers + ' ' +'Comments');
+}
+</script></h3>
+<br>
+
+    {%for x in comments%}
+  {% if x.blog == post.title %}
+
+  <div class="commentblock">
+
+
+<div class="acomment">
+<div class="profilesection" style="display: inline-block;padding:2%; width: 150px;  padding-top: 1%;text-align: center;vertical-align: top;">
+<div style="margin-right:5px;background-color: khaki;border-radius: 50%;width: 100px;height: 100px;display: inline-block;color: white;font-size: 60px;text-align: center;">{{x.ic}}</div> <span style='font-size:14px;'> <br>By <b> {{x.name}}</b></span>
+</div>
+<div class="commentsection" style="display: inline-block;width: 80%;    border: 1px solid lightgrey;border-radius: 4px;">
+<p style='font-size:14px;text-align: right;padding-top: 2%;'><b>On {{x.date}}</b></p>
+<p>{{x.comment|safe}}</p>
+
+<p style="text-align: right;padding-top: 15px;">
+<img src="{% static 'img/like2.png' %}" style="width: 30px;margin-right: 15px;">
+<img src="{% static 'img/like2.png' %}" style="width: 30px;transform: rotate(180deg); ">
+</p>
+</div>
+</div>
+
+</div>
+<br>
+  {% endif%}
+  {%endfor%}
+
+</div>
+
+  
+ 
+
+
+</div>
+<br><br>
+</div>
+
+
+
+
+
+{% endblock %}
