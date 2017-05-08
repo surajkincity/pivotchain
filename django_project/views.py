@@ -23,8 +23,8 @@ def home(request):
        post.save()
        message = 'Thanks! We will get back to you shortly.'
        form = ' '
-       display = 'none'
-       
+       display = 'none'  
+       displaya = 'none'     
     if "resume" in request.POST:
       if form1.is_valid():
        post = form1.save(commit=False)
@@ -32,7 +32,8 @@ def home(request):
        message = 'Thanks! We will get back to you shortly.'
        form1 = ' '
        displaya = 'none'
-    return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'message' :message  })    
+       display = 'none'
+    return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'displaya' :displaya , 'message' :message  })    
   else:
     message = ''
     display = 'block'
