@@ -26,7 +26,7 @@ def home(request):
        post = form.save(commit=False)
        post.save()           
     if "resume" in request.POST:
-      if form1.is_valid():
+
        post = form1.save(commit=False)
        post.save()
     return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'displaya' :displaya , 'message' :message  })    
