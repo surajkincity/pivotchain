@@ -53,7 +53,7 @@ def resume(request):
     message = ''
     display = 'block'
     form = leadsform()
-    return render(request, 'resume.html', {'form': form, 'display' :display , 'message' :message, 'form1' :form1 })
+    return render(request, 'resume.html', {'form': form, 'display' :display , 'message' :message,})
 
 
 
