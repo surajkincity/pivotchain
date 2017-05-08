@@ -687,7 +687,14 @@ At Pivotchain, we're building a world-class Analytics solutions helping our cust
 <div class="col-md-4 ">
 
 
- <iframe src="/resume" width="600" height="450" frameborder="0" scrolling="no" style='border: 1px solid #cccccc !important;width:100% !important;height:275px !important;border-radius: 2px !important;box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25)  !important;' frameborder="0"  allowfullscreen></iframe>
+<form action='.' method="POST" style="display:{{displaya}};margin-left: 10%;">
+  {% csrf_token %}
+
+      {{ form1.as_p }}
+    
+ <button type="submit" name="resume" style="width: 88%;margin-top: 15px;" class="btn larg-btn green">Send
+                        </button>
+</form>
 
 
                 <form method="POST" style="display:block;width: 100%;    text-align: center;">

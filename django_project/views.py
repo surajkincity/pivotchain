@@ -39,10 +39,8 @@ def home(request):
     form = contactform()
     form1 = leadsform()
     return render(request, 'home.html', {'form': form, 'display' :display , 'message' :message, 'form1' :form1 })
-
-def resume(request):
-  
  
+
 
 def contacted(request):
     comments = contact.objects.all()
