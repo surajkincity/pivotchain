@@ -30,7 +30,10 @@ def home(request):
       form = leadsform(request.POST)
       if form.is_valid():
        post = form.save(commit=False)
-       post.save()           
+       post.save()
+       else:
+        return render(request, 'about.html', )
+
     return render(request, 'home.html', {'form': form,'form1' :form1 , 'display' :display , 'displaya' :displaya , 'message' :message  })    
   else:
     message = ''
