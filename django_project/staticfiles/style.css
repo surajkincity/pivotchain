@@ -2291,11 +2291,12 @@ section.row, header.row, footer.row {
 }
 
 .features-content {
+
     padding-top: 0px;
     align-items: center;
     max-width: 100%;
     margin: 0px;
-    padding: 10%;
+    padding: 5%;
 }
 
 .two-row .left-inner-content {
