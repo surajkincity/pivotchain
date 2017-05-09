@@ -2296,7 +2296,7 @@ section.row, header.row, footer.row {
     align-items: center;
     max-width: 100%;
     margin: 0px;
-    padding: 8%;
+    padding: 10%;
 }
 
 .two-row .left-inner-content {
