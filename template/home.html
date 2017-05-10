@@ -819,7 +819,7 @@ At Pivotchain, we're building a world-class Analytics solutions helping our cust
 
 
     
- <button type="submit" name="resume" style="width: 100%;margin-top: 15px;" class="btn larg-btn green">Send
+ <button type="submit" name="resume" style="display:{{displaya}};width: 100%;margin-top: 15px;" class="btn larg-btn green">Send
                         </button>
 </form>
 
@@ -896,11 +896,11 @@ At Pivotchain, we're building a world-class Analytics solutions helping our cust
  
               
                 </form>-->
-               {{ messagec }} <form action='.' method="POST" style="display:{{display}};margin-left: 10%;">
+               {{ message1 }} <form action='.' method="POST" style="display:{{display}};margin-left: 10%;">
   {% csrf_token %}
 
       {{ form.as_p }}
- <button type="submit" name="contact" style="width: 88%;margin-top: 15px;" class="btn larg-btn green">Send
+ <button type="submit" name="contact" style="display:{{display}};width: 88%;margin-top: 15px;" class="btn larg-btn green">Send
                         </button>
   
 
