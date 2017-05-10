@@ -19,6 +19,7 @@ def home(request):
       
     if "contact" in request.POST:
       message1 = 'Thanks! We will get back to you shortly.'
+      message = ''
       display = 'none'
       displaya = 'block'  
       form = contactform(request.POST)
@@ -27,6 +28,7 @@ def home(request):
        post.save()           
     if "resume" in request.POST:
       message = 'Thanks! We will get back to you shortly.'
+      message1 = ''
       form = leadsform(request.POST, request.FILES)
       if form.is_valid():
         displaya = 'none'
@@ -35,7 +37,7 @@ def home(request):
         post.save()
       else:
         return render(request, 'about.html', )
-    return render(request, 'home.html', { 'display' :display , 'displaya' :displaya , 'message' :message  })    
+    return render(request, 'home.html', { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })    
   else:
     message = ''
     message1 = ''
