@@ -37,7 +37,7 @@ def home(request):
   else:
     message = ''
     display = 'block'
-    displaya = 'block'
+    displaya = 'none'
     form = contactform()
     form1 = leadsform()
     return render(request, 'home.html', {'form': form, 'display' :display , 'message' :message, 'form1' :form1 })
