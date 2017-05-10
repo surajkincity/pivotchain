@@ -14,10 +14,11 @@ import answers.models
 
 def home(request):  
   if request.method == "POST":
-    message = 'Thanks! We will get back to you shortly.'
+    
     
       
     if "contact" in request.POST:
+      message1 = 'Thanks! We will get back to you shortly.'
       display = 'none'
       displaya = 'block'  
       form = contactform(request.POST)
@@ -25,6 +26,7 @@ def home(request):
        post = form.save(commit=False)
        post.save()           
     if "resume" in request.POST:
+      message = 'Thanks! We will get back to you shortly.'
       form = leadsform(request.POST, request.FILES)
       if form.is_valid():
         displaya = 'none'
@@ -36,11 +38,12 @@ def home(request):
     return render(request, 'home.html', { 'display' :display , 'displaya' :displaya , 'message' :message  })    
   else:
     message = ''
+    message1 = ''
     display = 'block'
     displaya = 'block'
     form = contactform()
     form1 = leadsform()
-    return render(request, 'home.html', {'form': form, 'display' :display ,'displaya' :displaya , 'message' :message, 'form1' :form1 })
+    return render(request, 'home.html', {'form': form, 'display' :display ,'displaya' :displaya , 'message' :message,'message1' :message1, 'form1' :form1 })
  
 def resume(request):  
   if request.method == "POST":
