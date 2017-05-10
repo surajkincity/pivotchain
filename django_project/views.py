@@ -36,11 +36,10 @@ def home(request):
     return render(request, 'home.html', { 'display' :display , 'displaya' :displaya , 'message' :message  })    
   else:
     message = ''
-    display = 'none'
-    displaya = 'none'
+
     form = contactform()
     form1 = leadsform()
-    return render(request, 'home.html', {'form': form, 'display' :display , 'message' :message, 'form1' :form1 })
+    return render(request, 'home.html', {'form': form,  'message' :message, 'form1' :form1 })
  
 def resume(request):  
   if request.method == "POST":
