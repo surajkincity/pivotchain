@@ -37,7 +37,7 @@ def home(request):
         post.save()
       else:
         return render(request, 'about.html', )
-    return render(request, 'home.html', { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })    
+    return render(request, 'home.html/#careerlink', { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })    
   else:
     message = ''
     message1 = ''
