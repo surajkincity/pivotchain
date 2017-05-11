@@ -814,7 +814,7 @@ At Pivotchain, we're building a world-class Analytics solutions helping our cust
 </div>                
 <div class="col-md-4 ">
 
-{{message}}
+{{message|safe}}
 <form id='resumeform' enctype="multipart/form-data" action='.' method="POST" style="display:{{displaya}};margin-left: 10%;">
   {% csrf_token %}
 
@@ -899,7 +899,7 @@ At Pivotchain, we're building a world-class Analytics solutions helping our cust
  
               
                 </form>-->
-               {{ message1 }} <form action='.' method="POST" style="display:{{display}};margin-left: 10%;">
+               {{ message1|safe }} <form action='.' method="POST" style="display:{{display}};margin-left: 10%;">
   {% csrf_token %}
 
       {{ form.as_p }}
