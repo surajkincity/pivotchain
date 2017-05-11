@@ -14,8 +14,8 @@ import answers.models
 
 def home(request):  
   if request.method == "POST":
-    
-    
+    message = '<h3 class="thanks">Thanks! We will get back to you shortly!</h3>'
+    message1 = '<h3 class="thanks">Thanks! We will get back to you shortly!</h3>'
       
     if "contact" in request.POST:
       message1 = '<h3 class="thanks">Thanks! We will get back to you shortly!</h3>'
