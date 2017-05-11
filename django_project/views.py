@@ -38,7 +38,7 @@ def home(request):
       else:
         return render(request, 'about.html', )
 
-    return redirect('home', display='display' ,  displaya ='displaya', message = 'message'  , message1 = 'message1' )    
+    return HttpResponse(message1)   
     
   else:
     message = ''
