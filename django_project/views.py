@@ -25,8 +25,7 @@ def home(request):
       if form.is_valid():
        post = form.save(commit=False)
        post.save() 
-       return "this is it"
-       #return HttpResponseRedirect("https://www.pivotchain.com/#contactlink" , { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })
+       return HttpResponseRedirect("https://www.pivotchain.com/#contactlink" , { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })
           
     if "resume" in request.POST:
       message = '<h3 class="thanks">Thanks! We will get back to you shortly!</h3>'
