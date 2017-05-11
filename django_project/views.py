@@ -38,7 +38,7 @@ def home(request):
       else:
         return render(request, 'about.html', )
     
-    return render_to_response( 'home.html', { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })    
+    return render_to_response( 'home.html/#contactlink', { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })    
   else:
     message = ''
     message1 = ''
