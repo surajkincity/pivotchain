@@ -25,7 +25,9 @@ def home(request):
       form = contactform(request.POST)
       if form.is_valid():
        post = form.save(commit=False)
-       post.save()           
+       post.save() 
+       return HttpResponseRedirect("https://www.pivotchain.com/#careerform" , { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })
+          
     if "resume" in request.POST:
       message = '<h3 class="thanks">Thanks! We will get back to you shortly!</h3>'
       message1 = ''
@@ -35,10 +37,10 @@ def home(request):
         display = 'block'
         post = form.save(commit=False)
         post.save()
+        return HttpResponseRedirect("https://www.pivotchain.com/#contactlink" , { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })
       else:
         return render(request, 'about.html', )
-    return HttpResponseRedirect("https://www.pivotchain.com/#contactlink" , { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })
-    #return render_to_response( 'home.html', { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })    
+          #return render_to_response( 'home.html', { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })    
   else:
     message = ''
     message1 = ''
