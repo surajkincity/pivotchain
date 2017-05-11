@@ -37,9 +37,8 @@ def home(request):
         post.save()
       else:
         return render(request, 'about.html', )
-
-    return HttpResponse(message1)   
     
+    return render_to_response( 'home', { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })    
   else:
     message = ''
     message1 = ''
