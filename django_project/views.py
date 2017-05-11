@@ -18,7 +18,7 @@ def home(request):
     
       
     if "contact" in request.POST:
-      message1 = '<h3 class="thanks">Thanks! We will get back to you shortly.</h3>'
+      message1 = '<h3 class="thanks">Thanks! We will get back to you shortly!</h3>'
       message = ''
       display = 'none'
       displaya = 'block'  
@@ -27,7 +27,7 @@ def home(request):
        post = form.save(commit=False)
        post.save()           
     if "resume" in request.POST:
-      message = '<h3 class="thanks">Thanks! We will get back to you shortly.</h3>'
+      message = '<h3 class="thanks">Thanks! We will get back to you shortly!</h3>'
       message1 = ''
       form = leadsform(request.POST, request.FILES)
       if form.is_valid():
@@ -37,7 +37,9 @@ def home(request):
         post.save()
       else:
         return render(request, 'about.html', )
-    return render(request, 'home.html', { 'display' :display , 'displaya' :displaya , 'message' :message ,'message1' :message1  })    
+
+    return redirect('home', display='display' ,  displaya ='displaya', message = 'message'  , message1 = 'message1' )    
+    
   else:
     message = ''
     message1 = ''
