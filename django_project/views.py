@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,render_to_response
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import contactform,newsletterform,leadsform
 from django.core.mail import EmailMessage
