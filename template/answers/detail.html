@@ -4,7 +4,7 @@
 
 {% block content %}
 <style type="text/css">
-.footersocial img{width: 50px;margin: 5px;}
+.footersocial img{width: 45px;margin: 5px;}
 .col-md-1 {margin-top: }
 .col-md-1 img{width: 50px;margin-bottom: 1px;}
 body{    font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;}
@@ -258,7 +258,11 @@ var answers = answers+1;
 <p id="company_copyright" style="text-align: center;
     color: #71818c;
     padding-top: 20px;color: white;">Copyright © 2017 PivotChain</p>
-
+    <div class='footersocial' style="text-align: center;">
+<a target='_blank' href='https://www.facebook.com/pivotchain/'> <img src="{% static 'img/facebook.png' %}"> </a>
+<a target='_blank' href='https://twitter.com/pivotchain'> <img src="{% static 'img/twitter.png' %}"> </a>
+<a target='_blank' href='https://www.linkedin.com/company-beta/13281679'> <img src="{% static 'img/linkedin.png' %}"> </a>
+</div>
 </footer>
 </section>
 
